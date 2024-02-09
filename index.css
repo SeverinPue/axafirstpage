@@ -6,7 +6,7 @@
     --border-color: rgba(121, 120, 120, 0.404);
     --normal-font-color: #757575;
     --normal-link-color: #97bf0d;
-    --padding-main: calc((100% --width-aside) * 5);
+    --padding-main: 1rem;
 }
 
 
@@ -41,12 +41,6 @@ h4 {
     color: var(--normal-font-color);
 }
 
-h5 {
-
-    font-size: 1.2rem;
-    margin: 0;
-    color: var(--normal-font-color);
-}
 
 header {
 
@@ -90,14 +84,16 @@ aside div {
     padding: 1rem 0;
 }
 
-#logo:hover {
 
-    transition: 1s;
-    transform: rotate(360);
+
+
+aside img:hover {
+
+    transition: 0.5s;
+    max-width: 3.3rem;
 }
 
 aside img {
-
 
     max-width: 3rem;
 }
@@ -106,6 +102,20 @@ aside img {
 
     margin: 0.3rem;
 }
+
+nav a:hover {
+
+    transition: 10ms;
+    padding: 2px;
+}
+
+nav a {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--normal-font-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 aside nav {
 
@@ -130,13 +140,111 @@ aside {
 
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     top: var(--height-header);
     left: var(--width-aside);
     position: absolute;
     right: 0;
     bottom: 0;
-    padding-inline: var(--padding-main);
+    padding: var(--padding-main);
+}
+
+.activ {
+
+    font-weight: 900;
+}
+
+
+
+#personal-daten label {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#personal-daten label input {
+
+    border-radius: 0.5rem;
+    border-width: 1px;
+    padding: 3px;
+}
+
+#personal-daten label input:hover {
+
+    background-color: #7575751f;
+    border-radius: 1rem;
+    transform: scale(1);
+}
+
+#personal-daten label {
+
+    margin-bottom: 1rem;
+}
+
+#personal-daten {
+
+    border: none;
+}
+
+#form {
+
+    border: none;
+    background-color: #75757515;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.11);
+    border-radius: 1rem;
+}
+
+#geschlecht select:hover {
+
+    background-color: #75757515;
+    border-radius: 10px;
+}
+
+#geschlecht select {
+
+    border-radius: 5px;
+}
+
+#geschlecht {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#senden {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+
+    background-color: #75757515;
+    border-radius: 10px;
+}
+
+button {
+
+    background-color: #fff;
+    border-color: var(--border-color);
+    border-radius: 5px;
+}
+
+#bild {
+    
+    margin: 1rem;
+    float: right;
+    max-width: 500px;
 }
